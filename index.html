@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人简历</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {},
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans">
+
+  <!-- 返回顶部按钮 -->
+  <button id="backToTop" class="hidden fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:bg-blue-700 transition">返回顶部</button>
+
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow-md py-6 px-4 md:px-10 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Tiong Wei Jie</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:text-blue-600">About Me</a>
+        <a href="#skills" class="hover:text-blue-600">Skill</a>
+        <a href="#projects" class="hover:text-blue-600">Project</a>
+        <a href="#contact" class="hover:text-blue-600">Contact Me</a>
+        <button id="toggleDark" class="ml-4 px-2 py-1 rounded border text-sm">🌗</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Me -->
+  <section id="about" class="py-16 px-4 md:px-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-lg leading-relaxed">I am a computer science student who loves technology and focuses on the exploration and practice of artificial intelligence (AI). I firmly believe that the power of technology can reshape the world, and AI will be the key driving force in the future.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 px-4 md:px-10 bg-white dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Skills</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Web Development -->
+        <div class="group relative bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-6 transition hover:bg-blue-50 dark:hover:bg-blue-900">
+          <h3 class="text-xl font-semibold text-blue-700 dark:text-blue-400">Web Development</h3>
+          <p class="text-gray-700 dark:text-gray-300 text-sm mt-2 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-500 overflow-hidden">
+            Use HTML, CSS, Tailwind CSS and JavaScript to develop responsive website interfaces, and be proficient in using Figma for UI prototyping.
+          </p>
+        </div>
+  
+        <!-- AI Solutions -->
+        <div class="group relative bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-6 transition hover:bg-blue-50 dark:hover:bg-blue-900">
+          <h3 class="text-xl font-semibold text-blue-700 dark:text-blue-400">AI Solutions</h3>
+          <p class="text-gray-700 dark:text-gray-300 text-sm mt-2 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-500 overflow-hidden">
+            Mastering Ollama and RAG technologies (retrieval-augmented generation) can develop intelligent systems with semantic understanding and knowledge question-answering capabilities.
+          </p>
+        </div>
+  
+        <!-- App Development -->
+        <div class="group relative bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-6 transition hover:bg-blue-50 dark:hover:bg-blue-900">
+          <h3 class="text-xl font-semibold text-blue-700 dark:text-blue-400">App Development</h3>
+          <p class="text-gray-700 dark:text-gray-300 text-sm mt-2 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-500 overflow-hidden">
+            Use Android Studio to build Android apps and combine with Unity to create AR interactive experiences
+          </p>
+        </div>
+  
+        <!-- Photo Editing -->
+        <div class="group relative bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-6 transition hover:bg-blue-50 dark:hover:bg-blue-900">
+          <h3 class="text-xl font-semibold text-blue-700 dark:text-blue-400">Photo Editing</h3>
+          <p class="text-gray-700 dark:text-gray-300 text-sm mt-2 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-500 overflow-hidden">
+            Proficient in using Adobe Photoshop and Canva for image design and social media content production to enhance brand visual presentation.
+          </p>
+        </div>
+  
+        <!-- Video Editing -->
+        <div class="group relative bg-gray-100 dark:bg-gray-800 rounded-xl shadow-lg p-6 transition hover:bg-blue-50 dark:hover:bg-blue-900">
+          <h3 class="text-xl font-semibold text-blue-700 dark:text-blue-400">Video Editing</h3>
+          <p class="text-gray-700 dark:text-gray-300 text-sm mt-2 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-500 overflow-hidden">
+            Edit promotional videos, event recordings, and project introduction films using Adobe Premiere Pro.
+          </p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Projects Section -->
+<section id="projects" class="py-16 px-4 md:px-10">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">项目</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- 项目1 -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col transform transition hover:scale-105 hover:shadow-2xl duration-300">
+          <img src="SMD.jpeg" alt="项目1" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">SMD IC Design Make a Thon</h3>
+          <p class="mb-4 flex-grow">Winner of SMD IC Design Make a Thon Competition</p>
+          <button onclick="openModal(1)" class="bg-blue-600 text-white text-center py-2 rounded hover:bg-blue-700 transition">View Detail</button>
+        </div>
+        <!-- 项目2 -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col transform transition hover:scale-105 hover:shadow-2xl duration-300">
+          <img src="tcmai.png" alt="项目2" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">TCM AI Customer Service Chatbot</h3>
+          <p class="mb-4 flex-grow">Artificial Intelligence Customer Service at TCM Clinic</p>
+          <button onclick="openModal(2)" class="bg-blue-600 text-white text-center py-2 rounded hover:bg-blue-700 transition">View Detail</button>
+        </div>
+        <!-- 项目3 -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow p-4 flex flex-col transform transition hover:scale-105 hover:shadow-2xl duration-300">
+          <img src="Sarawak tour.png" alt="项目3" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Sarawak Tour AR Application</h3>
+          <p class="mb-4 flex-grow">Sarawak Museum Digital APP</p>
+          <button onclick="openModal(3)" class="bg-blue-600 text-white text-center py-2 rounded hover:bg-blue-700 transition">View Detail</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal 弹窗 -->
+  <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50">
+    <div id="modalContent" class="bg-white dark:bg-gray-900 rounded-xl p-6 w-[90%] max-w-2xl relative transform scale-95 opacity-0 transition duration-300">
+      <button onclick="closeModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl font-bold">&times;</button>
+      <img id="modalImage" src="" alt="项目图片" class="w-full h-60 object-cover rounded mb-4">
+      <h3 id="modalTitle" class="text-2xl font-bold mb-3"></h3>
+      <p id="modalDescription" class="text-gray-700 dark:text-gray-200"></p>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-gray-100 dark:bg-gray-900 px-4 md:px-10">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Contact Me</h2>
+      <form class="grid gap-6" id="contactForm">
+        <input type="text" name="user_name" placeholder="Name" class="p-3 rounded border text-black" id="name" required />
+        <input type="email" name="user_email" placeholder="EmailEmail" class="p-3 rounded border text-black" id="email" required />
+        <textarea name="message" placeholder="Message content" rows="5" class="p-3 rounded border text-black" id="message" required></textarea>
+        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">Send</button>
+        <p id="formError" class="text-red-500 hidden">Please fill in all fields and enter a valid email address</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-gray-800 text-center py-6 mt-10">
+    <p class="mb-2">© 2025 Tiong Wei Jie</p>
+    <div class="space-x-4">
+      <a href="https://github.com/weijie6966" target="_blank" class="hover:underline transition">GitHub</a>
+      <a href="https://www.linkedin.com/in/tiong-wei-jie-5726a8356/" target="_blank" class="hover:underline">LinkedIn</a>
+      <a href="mailto:weijie6966.com" class="hover:underline">Emial</a>
+    </div>
+  </footer>
+
+  <!-- JS Script -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    // 平滑滚动
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // 初始化 EmailJS（在页面加载时运行）
+  (function() {
+    // 使用你的 User ID（可在 EmailJS 控制台找到）
+    emailjs.init("OWWdh3dA2F7cvSHeu");
+  })();
+
+  // 获取表单元素，并监听提交事件
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // 阻止表单默认提交行为（刷新页面）
+
+    // 获取用户填写的表单内容，并去除前后空格
+    const name = document.getElementById('name').value.trim();       // 用户名字
+    const email = document.getElementById('email').value.trim();     // 用户邮箱
+    const message = document.getElementById('message').value.trim(); // 留言内容
+    const error = document.getElementById('formError');              // 错误提示框
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;                 // 邮箱格式正则表达式
+
+    // 表单验证逻辑
+    if (!name || !email || !message || !emailRegex.test(email)) {
+      // 如果有任何字段为空或邮箱格式不正确，则显示错误提示
+      error.classList.add('visible');
+      return; // 阻止继续执行发送逻辑
+    } else {
+      // 验证通过，隐藏错误提示
+      error.classList.remove('visible');
+    }
+
+    // 调用 EmailJS 发送邮件（service ID、template ID、form 表单）
+    emailjs.sendForm("service_jc4x0ll", "template_pu7hsyh", this)
+      .then(function () {
+        // 邮件发送成功后的操作
+        alert("邮件发送成功！");
+        document.getElementById("contactForm").reset(); // 清空表单
+      }, function (error) {
+        // 邮件发送失败的提示
+        alert("发送失败：" + error.text);
+      });
+  });
+
+    // 返回顶部按钮
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.remove('hidden');
+      } else {
+        backToTopBtn.classList.add('hidden');
+      }
+    });
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 深色模式切换
+    const toggleDark = document.getElementById('toggleDark');
+    toggleDark.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+
+    const modalData = {
+    1: {
+      title: "SMD IC Design Make a Thon",
+      description: "In the 'SMD IC Design Make a Thon' electronic design competition, my team and I independently designed and developed a high-sensitivity audio amplifier that can effectively enhance audio output and reduce signal noise interference. The project uses modular circuit design and combines signal amplification and filtering technology to significantly improve the output performance of the playback device while maintaining sound quality.",
+      image: "WhatsApp Image 2025-04-22 at 15.05.11.jpeg"
+    },
+    2: {
+      title: "TCM AI Customer Service Chatbot",
+      description: "I developed an AI customer service robot for TCM clinics based on Telegram, using Ollama and RAG technologies to provide real-time consultation and TCM recommendations. The robot can answer users' questions about symptoms, medicinal materials, and clinic opening hours, and improve user experience through natural language processing.",
+      image: "AI智能客服机器人的功能与场景实践.png"
+    },
+    3: {
+      title: "Sarawak Tour AApplication",
+      description: "This is an app called "+"'Sarawak Tourism' "+", which is developed using the Unity engine and combined with Blender to create 3D scenes to provide tourists with virtual tour services. Users can browse cultural relics and participate in interactive puzzle games in the app to enhance the effect of local cultural communication.",
+      image: "Screenshot 2025-04-22 151615.png"
+    }
+  };
+
+  function openModal(projectId) {
+    const modal = document.getElementById("projectModal");
+    const content = document.getElementById("modalContent");
+
+    document.getElementById("modalTitle").textContent = modalData[projectId].title;
+    document.getElementById("modalDescription").textContent = modalData[projectId].description;
+    document.getElementById("modalImage").src = modalData[projectId].image;
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
+    // 动画效果
+    setTimeout(() => {
+      content.classList.remove("scale-95", "opacity-0");
+      content.classList.add("scale-100", "opacity-100");
+    }, 10);
+  }
+
+  function closeModal() {
+    const modal = document.getElementById("projectModal");
+    const content = document.getElementById("modalContent");
+
+    // 关闭动画
+    content.classList.remove("scale-100", "opacity-100");
+    content.classList.add("scale-95", "opacity-0");
+
+    setTimeout(() => {
+      modal.classList.remove("flex");
+      modal.classList.add("hidden");
+    }, 300);
+  }
+  </script>
+
+  
+</body>
+
+</html>
